@@ -1,4 +1,6 @@
+## Spring概述
 ## ![1](https://img.shields.io/badge/Spring-Spring%E6%A6%82%E8%BF%B0-green.svg)
+
 ### 1.什么是spring?
 
 Spring 是个java企业级应用的开源开发框架。Spring主要用来开发Java应用，但是有些扩展是针对构建J2EE平台的web应用。Spring 框架目标是简化Java企业级应用开发，并通过POJO为基础的编程模型促进良好的编程习惯。
@@ -19,58 +21,58 @@ Spring 是个java企业级应用的开源开发框架。Spring主要用来开�
 `Core module`、`Bean module`、`Context module`、`Expression Language module`、`JDBC module`、`ORM module`、`OXM module`、`Java Messaging Service(JMS) module`、`Transaction module`、
 `Web module`、`Web-Servlet module`、`Web-Struts module` 、`Web-Portlet module`
 
-### 4 核心容器（应用上下文) 模块。
+### 4.核心容器（应用上下文)模块。
 
 这是基本的Spring模块，提供spring 框架的基础功能，BeanFactory 是 任何以spring为基础的应用的核心。Spring 框架建立在此模块之上，它使Spring成为一个容器。
 
-### 5 BeanFactory – BeanFactory 实现举例。
+### 5.BeanFactory – BeanFactory 实现举例。
 
 Bean 工厂是工厂模式的一个实现，提供了控制反转功能，用来把应用的配置和依赖从正真的应用代码中分离。
 最常用的BeanFactory 实现是XmlBeanFactory 类。
 
-### 6 XMLBeanFactory
+### 6.XMLBeanFactory
 
 最常用的就是org.springframework.beans.factory.xml.XmlBeanFactory ，它根据XML文件中的定义加载beans。该容器从XML 文件读取配置元数据并用它去创建一个完全配置的系统或应用。
 
-### 7 解释AOP模块
+### 7.解释AOP模块
 
 AOP模块用于发给我们的Spring应用做面向切面的开发， 很多支持由AOP联盟提供，这样就确保了Spring和其他AOP框架的共通性。这个模块将元数据编程引入Spring。
 
-### 8 解释JDBC抽象和DAO模块。
+### 8.解释JDBC抽象和DAO模块。
 
 通过使用JDBC抽象和DAO模块，保证数据库代码的简洁，并能避免数据库资源错误关闭导致的问题，它在各种不同的数据库的错误信息之上，提供了一个统一的异常访问层。它还利用Spring的AOP 模块给Spring应用中的对象提供事务管理服务。
 
-### 9 解释对象/关系映射集成模块。
+### 9.解释对象/关系映射集成模块。
 
 Spring 通过提供ORM模块，支持我们在直接JDBC之上使用一个对象/关系映射映射(ORM)工具，Spring 支持集成主流的ORM框架，如Hiberate,JDO和 iBATIS SQL Maps。Spring的事务管理同样支持以上所有ORM框架及JDBC。
 
-### 10 解释WEB 模块。
+### 10.解释WEB 模块。
 
 Spring的WEB模块是构建在application context 模块基础之上，提供一个适合web应用的上下文。这个模块也包括支持多种面向web的任务，如透明地处理多个文件上传请求和程序级请求参数的绑定到你的业务对象。它也有对Jakarta Struts的支持。
 
-### 11 Spring配置文件
+### 11.Spring配置文件
 
 Spring配置文件是个XML 文件，这个文件包含了类信息，描述了如何配置它们，以及如何相互调用。
 
-### 12 什么是Spring IOC 容器？
+### 12.什么是Spring IOC 容器？
 
 Spring IOC 负责创建对象，管理对象（通过依赖注入（DI），装配对象，配置对象，并且管理这些对象的整个生命周期。
 
-### 13 IOC的优点是什么？
+### 13.IOC的优点是什么？
 
 IOC 或 依赖注入把应用的代码量降到最低。它使应用容易测试，单元测试不再需要单例和JNDI查找机制。最小的代价和最小的侵入性使松散耦合得以实现。IOC容器支持加载服务时的饿汉式初始化和懒加载。
 
-### 14 ApplicationContext通常的实现是什么?
+### 14.ApplicationContext通常的实现是什么?
 
 . FileSystemXmlApplicationContext ：此容器从一个XML文件中加载beans的定义，XML Bean 配置文件的全路径名必须提供给它的构造函数。
 . ClassPathXmlApplicationContext：此容器也从一个XML文件中加载beans的定义，这里，你需要正确设置classpath因为这个容器将在classpath里找bean配置。
 . WebXmlApplicationContext：此容器加载一个XML文件，此文件定义了一个WEB应用的所有bean。
 
-### 15 Bean 工厂和 Application contexts  有什么区别？
+### 15.Bean 工厂和 Application contexts  有什么区别？
 
 Application contexts提供一种方法处理文本消息，一个通常的做法是加载文件资源（比如镜像），它们可以向注册为监听器的bean发布事件。另外，在容器或容器内的对象上执行的那些不得不由bean工厂以程序化方式处理的操作，可以在Application contexts中以声明的方式处理。Application contexts实现了MessageSource接口，该接口的实现以可插拔的方式提供获取本地化消息的方法。
 
-### 16 一个Spring的应用看起来象什么？
+### 16.一个Spring的应用看起来象什么？
 
 . 一个定义了一些功能的接口。
 . 这实现包括属性，它的Setter ， getter 方法和函数等。
@@ -79,6 +81,7 @@ Application contexts提供一种方法处理文本消息，一个通常的做�
 . 使用以上功能的客户端程序。
 
 ## 依赖注入
+## ![1](https://img.shields.io/badge/Spring-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-green.svg)
 
 ### 1.什么是Spring的依赖注入？
 
@@ -94,6 +97,7 @@ Application contexts提供一种方法处理文本消息，一个通常的做�
 你两种依赖方式都可以使用，构造器注入和Setter方法注入。最好的解决方案是用构造器参数实现强制依赖，setter方法实现可选依赖。
 
 ## Spring Beans
+## ![1](https://img.shields.io/badge/Spring-Beans-green.svg)
 
 ### 1.什么是Spring beans?
 
@@ -186,6 +190,7 @@ Spring 容器能够自动装配相互合作的bean，这意味着容器不需�
 可以。
 
 ## Spring注解
+## ![1](https://img.shields.io/badge/Spring-%E6%B3%A8%E8%A7%A3-green.svg)
 
 ### 1.什么是基于Java的Spring注解配置? 给一些注解的例子.
 
@@ -214,6 +219,7 @@ Spring 容器能够自动装配相互合作的bean，这意味着容器不需�
 当有多个相同类型的bean却只有一个需要自动装配时，将@Qualifier 注解和@Autowire 注解结合使用以消除这种混淆，指定需要装配的确切的bean。
 
 ## Spring数据访问
+## ![1](https://img.shields.io/badge/Spring-%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-green.svg)
 
 ### 1.在Spring框架中如何更有效地使用JDBC?
 
@@ -268,6 +274,7 @@ Spring支持两种类型的事务管理：
 大多数Spring框架的用户选择声明式事务管理，因为它对应用代码的影响最小，因此更符合一个无侵入的轻量级容器的思想。声明式事务管理要优于编程式事务管理，虽然比编程式事务管理（这种方式允许你通过代码控制事务）少了一点灵活性。
 
 ## Spring面向切面编程（AOP）
+## ![1](https://img.shields.io/badge/Spring-AOP-green.svg)
 
 ### 1.解释AOP
 
