@@ -1,4 +1,3 @@
-## Spring概述
 ## ![1](https://img.shields.io/badge/Spring-Spring%E6%A6%82%E8%BF%B0-green.svg)
 
 ### 1.什么是spring?
@@ -80,7 +79,6 @@ Application contexts提供一种方法处理文本消息，一个通常的做�
 . Spring 的XML 配置文件。
 . 使用以上功能的客户端程序。
 
-## 依赖注入
 ## ![1](https://img.shields.io/badge/Spring-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5-green.svg)
 
 ### 1.什么是Spring的依赖注入？
@@ -96,7 +94,6 @@ Application contexts提供一种方法处理文本消息，一个通常的做�
 
 你两种依赖方式都可以使用，构造器注入和Setter方法注入。最好的解决方案是用构造器参数实现强制依赖，setter方法实现可选依赖。
 
-## Spring Beans
 ## ![1](https://img.shields.io/badge/Spring-Beans-green.svg)
 
 ### 1.什么是Spring beans?
@@ -189,7 +186,6 @@ Spring 容器能够自动装配相互合作的bean，这意味着容器不需�
 
 可以。
 
-## Spring注解
 ## ![1](https://img.shields.io/badge/Spring-%E6%B3%A8%E8%A7%A3-green.svg)
 
 ### 1.什么是基于Java的Spring注解配置? 给一些注解的例子.
@@ -218,7 +214,6 @@ Spring 容器能够自动装配相互合作的bean，这意味着容器不需�
 
 当有多个相同类型的bean却只有一个需要自动装配时，将@Qualifier 注解和@Autowire 注解结合使用以消除这种混淆，指定需要装配的确切的bean。
 
-## Spring数据访问
 ## ![1](https://img.shields.io/badge/Spring-%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-green.svg)
 
 ### 1.在Spring框架中如何更有效地使用JDBC?
@@ -273,7 +268,6 @@ Spring支持两种类型的事务管理：
 
 大多数Spring框架的用户选择声明式事务管理，因为它对应用代码的影响最小，因此更符合一个无侵入的轻量级容器的思想。声明式事务管理要优于编程式事务管理，虽然比编程式事务管理（这种方式允许你通过代码控制事务）少了一点灵活性。
 
-## Spring面向切面编程（AOP）
 ## ![1](https://img.shields.io/badge/Spring-AOP-green.svg)
 
 ### 1.解释AOP
